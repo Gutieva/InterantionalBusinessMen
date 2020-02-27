@@ -1,0 +1,42 @@
+﻿@model InterantionalBusinessMen.Models.Executive
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Executive</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Rates)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rates)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Transaction)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Transaction)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnrollmentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnrollmentDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<InterantionalBusinessMen.ViewModels.EnrollmentDateGroup>
+
+@{
+    ViewBag.Title = "Executive for International Business Men";
+}
+
+<h2>International Business Men</h2>
+
+<table>
+    <tr>
+        <th>
+            Enrollment Date
+        </th>
+        <th>
+            Executives
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnrollmentDate)
+            </td>
+            <td>
+                @item.ExecutiveCount
+            </td>
+        </tr>
+    }
+</table>
